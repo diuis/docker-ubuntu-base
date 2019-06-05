@@ -1,13 +1,5 @@
 - task: Docker@2
   inputs:
-    command: 'buildAndPush'
+    repository: 'diuis'
+    command: 'build'
     Dockerfile: '**/Dockerfile'
-
-trigger:
-- master
-
-pool:
-  vmImage: 'ubuntu-latest'
-
-steps:
-- command: buildAndPush
