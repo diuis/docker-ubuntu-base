@@ -1,4 +1,4 @@
-FROM ubuntu:18.10
+FROM ubuntu:19.04
 LABEL mantainer "diuis"
 
 RUN groupadd -g 999 appuser && useradd -m -r -u 999 -g appuser appuser && \
